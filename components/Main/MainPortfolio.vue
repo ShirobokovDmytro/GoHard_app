@@ -87,7 +87,7 @@ export default {
   }
   .carousel{
     margin: 50px 0 0 0;
-    width: 1100px;
+    width: 1000px;
   }
   .medium{
     background-color: black;

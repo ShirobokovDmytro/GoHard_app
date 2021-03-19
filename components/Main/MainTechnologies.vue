@@ -20,6 +20,7 @@
 <style scoped>
   .technologies{
     width: 100%;
+    padding: 0;
     min-height: 500px;
     background-image: url(@/assets/main/technologies/bg_tech.jpg);
     display: flex;
@@ -76,7 +77,6 @@
   @media screen and (max-width: 1100px){
     .technologies__container{
       width: 100%;
-      padding: 15px;
       flex-direction: column;
     }
     .technologies__container__info{

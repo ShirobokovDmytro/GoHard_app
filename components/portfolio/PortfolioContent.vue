@@ -60,7 +60,6 @@ export default {
   margin-top: 50px;
   width: 100%;
   height: 600px;
-  padding: 15px;
 }
 
 .carousel_item{
@@ -69,6 +68,9 @@ export default {
   border-radius: 15px;
   background-size: cover;
   background-repeat: no-repeat;
+}
+.el-carousel__item.is-active {
+  box-shadow: 0 0 44px rgba(255, 255, 255, 0.25);
 }
 .carousel_description{
   position: absolute;
@@ -167,8 +169,5 @@ export default {
 }
 </style>
 <style>
-.el-carousel__container{
-  border-radius: 15px;
-  box-shadow: 0px 0px 11.6221px rgba(255, 255, 255, 0.25);
-}
+
 </style>

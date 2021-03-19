@@ -70,7 +70,7 @@ export default {
   background-repeat: no-repeat;
 }
 .el-carousel__item.is-active {
-  box-shadow: 0 0 44px rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.25);
 }
 .carousel_description{
   position: absolute;

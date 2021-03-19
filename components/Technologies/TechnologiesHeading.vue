@@ -35,12 +35,17 @@
 span{
   color: #FFFFFF;
 }
-@media screen and (max-width: 520px){
+@media screen and (max-width: 670px){
   .about__us__heading{
     font-size: 60px;
   }
   span:before{
     bottom: 5px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .about__us__heading {
+    font-size: 42px;
   }
 }
 </style>

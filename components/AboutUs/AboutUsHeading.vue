@@ -44,4 +44,9 @@
       bottom: 5px;
     }
   }
+  @media screen and (max-width: 400px){
+    .about__us__heading{
+      font-size: 45px;
+    }
+  }
 </style>

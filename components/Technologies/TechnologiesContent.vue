@@ -1,12 +1,6 @@
 <template>
   <div class="technologies__content">
     <div class="technologies__container">
-      <p class="technologies__description">
-        In our work connected with development we focus
-        on the most flexible, innovative and relevant
-        programming languages, frameworks
-        and libraries.
-      </p>
       <div v-for="(block, index) of blocks" :key="index">
         <div class="slider__container">
           <div class="slider__heading">
@@ -39,64 +33,64 @@ export default {
         {
           head_1: 'Front-end',
           head_2: 'development',
-          description: 'In our work connected with development we focus on the most flexible, innovative and relevant programming languages, frameworks and libraries.',
+          description: 'Front-end is the brightest showcase how your website can look and felt by users. User friendly design and functionality makes the difference in the way how users perceive the information.',
           slides: [
             {
               img: require('../../assets/technologies/Front/js.png'),
               head: 'JS',
-              description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, nisl, lectus nisl sed quis non. Eget porta elit sit tempor eu sit.'
+              description: 'JavaScript is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions.'
             },
             {
               img: require('../../assets/technologies/Front/react.png'),
               head: 'React.js',
-              description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, nisl, lectus nisl sed quis non. Eget porta elit sit tempor eu sit.'
+              description: 'React makes it painless to create interactive UIs.'
             },
             {
               img: require('../../assets/technologies/Front/vue.png'),
               head: 'Vue.js',
-              description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, nisl, lectus nisl sed quis non. Eget porta elit sit tempor eu sit.'
+              description: 'Vue is a progressive framework for building user interfaces. Unlike other monolithic frameworks, Vue is designed from the ground up to be incrementally adoptable.'
             },
             {
               img: require('../../assets/technologies/Front/html.png'),
-              head: 'Html',
-              description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, nisl, lectus nisl sed quis non. Eget porta elit sit tempor eu sit.'
+              head: 'HTML',
+              description: 'HTML is the standard markup language for Web pages.'
             },
             {
               img: require('../../assets/technologies/Front/css.png'),
-              head: 'Css',
-              description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, nisl, lectus nisl sed quis non. Eget porta elit sit tempor eu sit.'
+              head: 'CSS',
+              description: 'CSS describes how HTML elements are to be displayed.'
             },
             {
               img: require('../../assets/technologies/Front/bootstrap.png'),
               head: 'Bootstrap',
-              description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, nisl, lectus nisl sed quis non. Eget porta elit sit tempor eu sit.'
+              description: 'Quickly design and customize responsive mobile-first sites with Bootstrap.'
             },
             {
               img: require('../../assets/technologies/Front/material.png'),
-              head: 'MATERIAL-UI',
-              description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, nisl, lectus nisl sed quis non. Eget porta elit sit tempor eu sit.'
+              head: 'Material-UI',
+              description: 'React component for faster and easier web development.'
             },
             {
               img: require('../../assets/technologies/Front/elements.png'),
               head: 'Element',
-              description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, nisl, lectus nisl sed quis non. Eget porta elit sit tempor eu sit.'
+              description: 'Element, a Vue 2.0 based component library for developers, designers and product managers'
             },
             {
               img: require('../../assets/technologies/Front/nuxt.png'),
               head: 'Nuxt.js',
-              description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, nisl, lectus nisl sed quis non. Eget porta elit sit tempor eu sit.'
+              description: 'An open source framework making web development simple and powerful.'
             },
             {
               img: require('../../assets/technologies/Front/next.png'),
               head: 'Next.js',
-              description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, nisl, lectus nisl sed quis non. Eget porta elit sit tempor eu sit.'
+              description: 'Next.js gives you the best developer experience with all the features you need for production: hybrid static & server rendering.'
             }
           ]
         },
         {
           head_1: 'Back-end',
           head_2: 'development',
-          description: 'In our work connected with development we focus on the most flexible, innovative and relevant programming languages, frameworks and libraries.',
+          description: 'Quality of back-end on your project is a direct characteristic of the quality of the project. That is why the right choice of technologies used, is so important.',
           slides: [
             {
               img: require('../../assets/technologies/back/js.png'),
@@ -173,7 +167,7 @@ export default {
         {
           head_1: 'Mobile',
           head_2: 'development',
-          description: 'In our work connected with development we focus on the most flexible, innovative and relevant programming languages, frameworks and libraries.',
+          description: 'Depending on the requirements, business idea and final expectations, we can choose technologies and implement requests in the most reasonable way.',
           slides: [
             {
               img: require('../../assets/technologies/mobile/objective_C.png'),
@@ -181,8 +175,8 @@ export default {
               description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, nisl, lectus nisl sed quis non. Eget porta elit sit tempor eu sit.'
             },
             {
-              img: require('../../assets/technologies/mobile/swift.png'),
-              head: 'Swift',
+              img: require('../../assets/technologies/mobile/cross_flutter.png'),
+              head: 'Flutter',
               description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, nisl, lectus nisl sed quis non. Eget porta elit sit tempor eu sit.'
             },
             {
@@ -213,7 +207,11 @@ export default {
 }
 </script>
 <style scoped>
-
+.heading{
+  color: #228A43;
+  font-size: 50px;
+  font-weight: bold;
+}
 .el-carousel__item h3 {
   color: #475669;
   font-size: 14px;

@@ -5,7 +5,7 @@
         Portfolio
       </div>
       <div class="portfolio__description">
-        Here are some of our most relevant and challenging projects that we worked with and implemented customers requirements and ideas,
+        Here are some of our previous projects that we worked on and implemented customers requirements and ideas,
         in order to achieve their business objectives.
       </div>
       <el-carousel class="carousel" :interval="4000" type="card">

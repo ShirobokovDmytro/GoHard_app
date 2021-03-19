@@ -7,12 +7,12 @@
           Technologies
         </h2>
         <div class="info__description">
-          In our work connected with web development we focus on the most flexible, innovative and relevant
+          In our work we always focus on the most flexible, innovative and relevant
           programming languages, frameworks and libraries.
         </div>
-        <button class="info__button">
+        <nuxt-link tag="button" to="/technologies" class="info__button">
           Watch list
-        </button>
+        </nuxt-link>
       </div>
     </div>
   </section>

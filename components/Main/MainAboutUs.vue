@@ -8,31 +8,31 @@
         </h2>
         <div class="left__container__content">
           We are a fast-growing software development
-          agency with a strong expertise in the most
+          company with a strong expertise in the most
           relevant and innovative programming
           languages, frameworks, libraries
           and tools.
         </div>
         <nuxt-link to="/about-us" tag="button" class="left__container__button">
-          More
+          Read more
         </nuxt-link>
       </div>
       <div class="about__us__right__container">
         <div class="right__container__box container-first">
-          <span class="box__number">5</span>
-          <span class="box__text">most programming languages</span>
+          <span class="box__number">7</span>
+          <span class="box__text">Most relevant programming languages</span>
         </div>
         <div class="right__container__box container-second">
           <span class="box__number">4</span>
-          <span class="box__text"> fields of business</span>
+          <span class="box__text"> Fields of business we work with</span>
         </div>
         <div class="right__container__box container-third">
           <span class="box__number">2</span>
-          <span class="box__text">years of work at the market</span>
+          <span class="box__text">Years of software development at the market</span>
         </div>
         <div class="right__container__box container-fourth">
           <span class="box__number">1</span>
-          <span class="box__text">united teamof professionals</span>
+          <span class="box__text">Strong team of professionals</span>
         </div>
       </div>
       <nuxt-link tag="button" to="/about-us" class="mobile__button">

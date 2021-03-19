@@ -1,7 +1,9 @@
 <template>
   <header>
     <div class="header__container">
-      <img class="logo" src="@/assets/header/logo.png" alt="logo">
+      <nuxt-link class="logo" to="/">
+        <img class="logo" src="@/assets/header/logo.png" alt="logo">
+      </nuxt-link>
       <nav class="main__manu">
         <nuxt-link
           v-for="(link, index) of links"
@@ -14,14 +16,16 @@
       </nav>
       <div class="hamburger-menu">
         <input id="menu__toggle" type="checkbox">
-        <label class="menu__btn" for="menu__toggle">
+        <label class="menu__btn" for="menu__toggle" @click="menu = !menu">
           <span class="first" />
           <span class="second" />
           <span class="third" />
         </label>
-        <ul class="menu__box">
-          <li v-for="(link, index) of links" :key="index">
-            <nuxt-link tag="ul" class="menu__item" :to="link.to"> {{ link.name }} </nuxt-link>
+        <ul v-if="menu" class="menu__box">
+          <li v-for="(link, index) of links" :key="index" @click="menu = !menu">
+            <nuxt-link tag="ul" class="menu__item" :to="link.to">
+              {{ link.name }}
+            </nuxt-link>
           </li>
         </ul>
       </div>
@@ -32,12 +36,13 @@
 export default {
   data () {
     return {
+      menu: false,
       links: [
         { name: 'Company', to: '/' },
         { name: 'About us', to: '/about-us' },
         { name: 'Our Services', to: '/our-services' },
         { name: 'Technologies', to: '/technologies' },
-        { name: 'Portfolio', to: '#' }
+        { name: 'Portfolio', to: '/portfolio' }
       ]
     }
   }
@@ -52,7 +57,7 @@ export default {
     top: 0;
     display: flex;
     justify-content: center;
-    z-index: 1000;
+    z-index: 10;
     box-shadow: 0px 4px 6px rgba(180, 180, 180, 0.1);
   }
   a.nuxt-link-exact-active {
@@ -139,9 +144,8 @@ export default {
   .menu__box {
     display: block;
     position: fixed;
-    visibility: hidden;
     top: 0;
-    left: -100%;
+    left: 0;
     width: 100%;
     height: 250px;
     margin: 0;
@@ -161,17 +165,20 @@ export default {
     border-bottom: 0.5px solid #525252;
     cursor: pointer;
   }
+  .nuxt-link-exact-active{
+    color: #228A43;
+  }
   .menu__item:hover {
     color: #228A43;
   }
-  #menu__toggle:checked ~ .menu__btn > span {
-    background-color: #228A43;
+  .main__manu{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
   }
-  #menu__toggle:checked ~ .menu__box {
-    visibility: visible;
-    left: 0;
-  }
-  @media screen and (max-width: 720px) {
+
+  @media screen and (max-width: 740px) {
     .hamburger-menu{
       display: block;
     }

@@ -25,7 +25,7 @@
         </el-row>
       </div>
       <div class="services_description">
-        We are a fast-growing software development agency with a strong expertise in the most relevant and innovative programming languages, frameworks, libraries and tools.
+        Based on our previous expertise in Web/Mobile development, experience with a Product solutions and Design, we are always doing our best to provide you with the expected results.
       </div>
       <nuxt-link tag="button" to="/our-services" class="services__button">
         More details
@@ -40,12 +40,12 @@ export default {
       blocks: [
         { description: 'Web development', src: require('../../assets/main/services/web_dev.gif') },
         { description: 'Mobile development', src: require('../../assets/main/services/mobile_develop.gif') },
-        { description: 'Ux design', src: require('../../assets/main/services/design.gif') },
+        { description: 'UI/UX design', src: require('../../assets/main/services/design.gif') },
         { description: 'Legacy Code Redevelopment', src: require('../../assets/main/services/legacy.gif') },
         { description: 'Consulting/Estimation', src: require('../../assets/main/services/consulting.gif') },
         { description: 'Code Review', src: require('../../assets/main/services/code_review.gif') },
         { description: 'Software Maintenance', src: require('../../assets/main/services/sofware.gif') },
-        { description: 'Product developand support', src: require('../../assets/main/services/product_develop.gif') }
+        { description: 'Product development and support', src: require('../../assets/main/services/product_develop.gif') }
       ]
     }
   }

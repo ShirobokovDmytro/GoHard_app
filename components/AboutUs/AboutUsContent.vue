@@ -1,14 +1,9 @@
 <template>
   <div class="about_us__content">
     <div class="about_us__content__container">
+      <h2 class="heading">Why Us?</h2>
       <p class="about_us__description">
-        We are a fast-growing software development agency with a strong expertise
-        in the most relevant and innovative programming languages,
-        frameworks, libraries and tools. We are a fast-growing
-        software development agency with a strong
-        expertise in the most relevant and innovative
-        programming languages, frameworks,
-        libraries and tools.
+        Working about 2 years on the market, we consider us as a fast-growing and developing software development agency. We spent a lot of time building a team of experienced developers/designers, in order to discover new horizons in the quality of customers services.
       </p>
       <div class="about_us__blocks">
         <div class="block" v-for="(block, index) of blocks" :key="index" :class="block.class">
@@ -33,10 +28,10 @@ export default {
   data () {
     return {
       blocks: [
-        { class: 'left', number: 5, heading: 'Most relevant and innovative programming languages', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui eget sit vel dolor mauris. Aliquet mauris pellentesque euismod sagittis, condimentum nec.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui eget sit vel dolor mauris. Aliquet mauris pellentesque euismod sagittis, condimentum nec.' },
-        { class: 'right', number: 4, heading: 'Fields of business we implement solutions for', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui eget sit vel dolor mauris. Aliquet mauris pellentesque euismod sagittis, condimentum nec.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui eget sit vel dolor mauris. Aliquet mauris pellentesque euismod sagittis, condimentum nec.' },
-        { class: 'left', number: 2, heading: 'Years of work at the market', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui eget sit vel dolor mauris. Aliquet mauris pellentesque euismod sagittis, condimentum nec.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui eget sit vel dolor mauris. Aliquet mauris pellentesque euismod sagittis, condimentum nec.' },
-        { class: 'right', number: 1, heading: 'United teamof professionals', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui eget sit vel dolor mauris. Aliquet mauris pellentesque euismod sagittis, condimentum nec.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui eget sit vel dolor mauris. Aliquet mauris pellentesque euismod sagittis, condimentum nec.' }
+        { class: 'left', number: 7, heading: 'Most relevant programming languages', description: 'We are always aware of the most innovative and relevant technologies, in order to make our projects comfortable and convenient to update and develop in future. We focus on JavaScript, Python, PHP(Modern), Golang, React Native, Kotlin, Swift' },
+        { class: 'right', number: 4, heading: 'Fields of business we work with', description: 'Most of our previous projects are related to medical, delivery, educational and construction industries.' },
+        { class: 'left', number: 2, heading: 'Years of software development at the market', description: 'Working about 2 years on the market, we consider us as a fast-growing and developing software development agency. We spent a lot of time building a team of experienced developers/designers, in order to discover new horizons in the quality of customers services.' },
+        { class: 'right', number: 1, heading: 'Strong team of professionals', description: 'Despite the fact that a part of our developers work in office and others work on a remote positions, we are one team of united professionals who works as one tool.' }
       ]
     }
   }
@@ -58,11 +53,16 @@ export default {
     justify-content: center;
     align-items: center;
   }
+  .heading{
+    color: #228A43;
+    font-size: 50px;
+    font-weight: bold;
+  }
   .about_us__description{
     text-align: center;
     font-size: 23px;
     color: #A5A5A5;
-    max-width: 750px;
+    max-width: 850px;
   }
   .about_us__blocks{
     display: flex;
@@ -71,6 +71,8 @@ export default {
     align-items: flex-start;
   }
   .block{
+    box-sizing: border-box;
+    padding: 5px;
     border-radius: 5px;
     width: 750px;
     height: 250px;
@@ -95,17 +97,19 @@ export default {
     font-size: 96px;
     line-height: 130px;
     text-align: center;
+    font-weight: 500;
   }
   .caption__description{
     text-align: center;
-    font-size: 18px;
+    font-size: 22px;
     color: #fff;
+    font-weight: bold;
   }
   .description{
     padding: 25px;
     width: 100%;
     color: #A5A5A5;
-    font-size: 18px;
+    font-size: 22px;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -132,7 +136,7 @@ export default {
       height: auto;
     }
   }
-  @media screen and (max-width: 560px){
+  @media screen and (max-width: 700px){
     .block{
       flex-direction: column;
       height: auto;

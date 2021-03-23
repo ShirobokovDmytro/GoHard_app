@@ -93,74 +93,69 @@ export default {
           description: 'Quality of back-end on your project is a direct characteristic of the quality of the project. That is why the right choice of technologies used, is so important.',
           slides: [
             {
-              img: require('../../assets/technologies/back/js.png'),
-              head: 'JS',
-              description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, nisl, lectus nisl sed quis non. Eget porta elit sit tempor eu sit.'
-            },
-            {
               img: require('../../assets/technologies/back/node.png'),
               head: 'Node.js',
-              description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, nisl, lectus nisl sed quis non. Eget porta elit sit tempor eu sit.'
+              description: 'Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser.'
             },
             {
               img: require('../../assets/technologies/back/express.png'),
               head: 'Express.js',
-              description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, nisl, lectus nisl sed quis non. Eget porta elit sit tempor eu sit.'
+              description: 'Express.js is a back end web application framework for Node.js, released as free and open-source software under the MIT License.'
             },
             {
               img: require('../../assets/technologies/back/php.png'),
               head: 'PHP',
-              description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, nisl, lectus nisl sed quis non. Eget porta elit sit tempor eu sit.'
+              description: 'PHP is a general-purpose scripting language especially suited to web development. The PHP reference implementation is now produced by The PHP Group.'
             },
             {
               img: require('../../assets/technologies/back/laravel.png'),
               head: 'Laravel',
-              description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, nisl, lectus nisl sed quis non. Eget porta elit sit tempor eu sit.'
+              description: 'Laravel is a free, open-source PHP web framework, created by Taylor Otwell and intended for the development of web applications following the model–view–controller (MVC) architectural pattern and based on Symfony.'
             },
             {
               img: require('../../assets/technologies/back/syphony.png'),
               head: 'Symfony',
-              description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, nisl, lectus nisl sed quis non. Eget porta elit sit tempor eu sit.'
+              description: 'Symfony is a PHP web application framework and a set of reusable PHP components/libraries. It was published as free software on October 18, 2005 and released under the MIT license.'
             },
             {
               img: require('../../assets/technologies/back/pytone.png'),
               head: 'Python',
-              description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, nisl, lectus nisl sed quis non. Eget porta elit sit tempor eu sit.'
+              description: 'Python is an interpreted, high-level and general-purpose programming language. Python\'s design philosophy emphasizes code readability with its notable use of significant indentation.'
             },
             {
               img: require('../../assets/technologies/back/django.png'),
               head: 'Django',
-              description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, nisl, lectus nisl sed quis non. Eget porta elit sit tempor eu sit.'
+              description: 'Django is a Python-based free and open-source web framework that follows the model-template-views (MTV) architectural pattern.'
             },
             {
               img: require('../../assets/technologies/back/flack.png'),
               head: 'Flask',
-              description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, nisl, lectus nisl sed quis non. Eget porta elit sit tempor eu sit.'
+              description: 'Flask is a micro web framework written in Python. It is classified as a microframework because it does not require particular tools or libraries.'
             },
             {
               img: require('../../assets/technologies/back/golang.png'),
               head: 'Golang',
-              description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, nisl, lectus nisl sed quis non. Eget porta elit sit tempor eu sit.'
+              description: 'Go is a statically typed, compiled programming language designed at Google by Robert Griesemer, Rob Pike, and Ken Thompson.'
             },
             {
               img: require('../../assets/technologies/back/begoo.png'),
-              head: 'Begoo',
-              description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, nisl, lectus nisl sed quis non. Eget porta elit sit tempor eu sit.'
+              head: 'Beego',
+              description: 'Beego is a RESTful HTTP framework for the rapid development of Go applications including APIs, web apps and backend services with integrated Go specific features such as interfaces and struct embedding.'
             },
             {
               img: require('../../assets/technologies/back/sql.png'),
               head: 'MySQL',
-              description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, nisl, lectus nisl sed quis non. Eget porta elit sit tempor eu sit.'
+              description: 'MySQL is an open-source relational database management system (RDBMS). A relational database organizes data into one or more data tables in which data types may be related to each other;'
             },
             {
               img: require('../../assets/technologies/back/postgresql.png'),
               head: 'PostgreSQL',
-              description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, nisl, lectus nisl sed quis non. Eget porta elit sit tempor eu sit.'
+              description: 'PostgreSQL also known as Postgres, is a free and open-source relational database management system (RDBMS) emphasizing extensibility and SQL compliance.'
             },
             {
               img: require('../../assets/technologies/back/mongodb.png'),
               head: 'MongoDB',
-              description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, nisl, lectus nisl sed quis non. Eget porta elit sit tempor eu sit.'
+              description: 'MongoDB is a source-available cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas.'
             }
           ]
         },
@@ -172,32 +167,32 @@ export default {
             {
               img: require('../../assets/technologies/mobile/objective_C.png'),
               head: 'Objective-C',
-              description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, nisl, lectus nisl sed quis non. Eget porta elit sit tempor eu sit.'
+              description: 'Objective-C is a general-purpose, object-oriented programming language that adds Smalltalk-style messaging to the C programming language. It was the main programming language supported by Apple'
             },
             {
               img: require('../../assets/technologies/mobile/cross_flutter.png'),
               head: 'Flutter',
-              description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, nisl, lectus nisl sed quis non. Eget porta elit sit tempor eu sit.'
+              description: 'Flutter is an open-source UI software development kit created by Google. It is used to develop applications for Android, iOS, Linux, Mac, Windows, Google Fuchsia, and the web from a single codebase.'
             },
             {
               img: require('../../assets/technologies/mobile/java.png'),
               head: 'Java',
-              description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, nisl, lectus nisl sed quis non. Eget porta elit sit tempor eu sit.'
+              description: 'Java is a class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible.'
             },
             {
               img: require('../../assets/technologies/mobile/kotlin.png'),
               head: 'Kotlin',
-              description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, nisl, lectus nisl sed quis non. Eget porta elit sit tempor eu sit.'
+              description: 'Kotlin is a cross-platform, statically typed, general-purpose programming language with type inference. Kotlin is designed to interoperate fully with Java, and the JVM version of Kotlin\'s standard library depends on the Java Class Library, but type inference allows its syntax to be more concise.'
             },
             {
               img: require('../../assets/technologies/mobile/react.png'),
               head: 'React Native',
-              description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, nisl, lectus nisl sed quis non. Eget porta elit sit tempor eu sit.'
+              description: 'React Native is an open-source mobile application framework. It is used to develop applications for Android, Android TV, iOS, macOS, tvOS, Web, Windows and UWP by enabling developers to use React\'s framework along with native platform capabilities.'
             },
             {
               img: require('../../assets/technologies/mobile/swift.png'),
               head: 'Swift',
-              description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, nisl, lectus nisl sed quis non. Eget porta elit sit tempor eu sit.'
+              description: 'Swift is a general-purpose, multi-paradigm, compiled programming language developed by Apple Inc. and the open-source community, first released in 2014.'
             }
           ]
         }

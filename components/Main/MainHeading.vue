@@ -11,7 +11,7 @@
   .main__container{
     width: 1100px;
     min-height: 100vh;
-    background-image: url(@/assets/main/bg_main.jpg);
+    background-image: url(@/assets/main/bg_main.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -38,7 +38,7 @@
   @media screen and (max-width: 1100px){
     .main__container{
       width: 100%;
-      background-image: url(@/assets/main/main_min.png);
+      background-image: url(@/assets/main/bg_main.png);
       display: flex;
       justify-content: center;
       align-items: center;

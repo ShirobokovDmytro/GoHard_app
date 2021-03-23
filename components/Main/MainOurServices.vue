@@ -81,6 +81,10 @@ export default {
     width: 100%;
     margin-top: 50px;
   }
+  img{
+    width: 100px;
+    height: 100px;
+  }
   .services_block__container{
     display: flex;
     justify-content: center;
@@ -97,7 +101,6 @@ export default {
     align-items: center;
   }
   .description{
-    margin-top: 15px;
     color: #fff;
     text-align: center;
     font-size: 18px;
@@ -108,6 +111,7 @@ export default {
     font-weight: 300;
     font-size: 23px;
     line-height: 31px;
+    margin-top: 50px;
     color: #A5A5A5;
   }
   .services__button{

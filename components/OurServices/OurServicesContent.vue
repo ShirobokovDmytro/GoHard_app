@@ -68,6 +68,10 @@ export default {
   color: #A5A5A5;
   max-width: 750px;
 }
+img{
+  width: 120px;
+  height: 120px;
+}
 .our_services__blocks{
   display: flex;
   flex-direction: column;
@@ -99,9 +103,10 @@ export default {
   box-sizing: border-box;
 }
 .caption__number{
+  height: auto;
   font-size: 96px;
-  line-height: 130px;
   text-align: center;
+  margin-bottom: -30px;
 }
 .heading-green{
   color: #228A43;

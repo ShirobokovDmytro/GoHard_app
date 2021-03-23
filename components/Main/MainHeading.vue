@@ -9,14 +9,14 @@
 </template>
 <style scoped>
   .main__container{
-    width: 1100px;
+    width: 100%;
     min-height: 100vh;
     background-image: url(@/assets/main/bg_main.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
   }
   h1{

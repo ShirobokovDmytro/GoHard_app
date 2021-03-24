@@ -118,7 +118,7 @@ export default {
     align-items: flex-end;
     justify-content: space-between;
     position: fixed;
-    top: 30px;
+    top: 23px;
     right: 30px;
     width: 50px;
     height: 30px;

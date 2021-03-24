@@ -25,12 +25,7 @@
     font-size: 100px;
     line-height: 86px;
   }
-  span{
-    color: #FFF;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 2px #228A43;
-  }
+
   @media screen and (max-width: 1100px){
     .main__container{
       width: 100%;
@@ -44,9 +39,20 @@
       font-size: 8vw;
     }
   }
+  @media screen and (min-width: 600px){
+    span{
+      color: #FFF;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke: 2px #228A43;
+    }
+  }
   @media screen and (max-width: 600px){
     h1{
       line-height: 40px;
+    }
+    span{
+      color: #228A43;
     }
   }
   @media screen and (orientation:landscape) {

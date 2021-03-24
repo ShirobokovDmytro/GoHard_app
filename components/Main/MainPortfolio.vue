@@ -8,36 +8,12 @@
         Here are some of our previous projects that we worked on and implemented customers requirements and ideas,
         in order to achieve their business objectives.
       </div>
-      <el-carousel class="carousel" :interval="4000" type="card">
-        <el-carousel-item v-for="(item, index) in sliderImages" :key="index">
-          <h3 class="medium" :style="{ backgroundImage: 'url(' + item.src + ')' }">
-            <!-- {{ item.description }}-->
-          </h3>
-        </el-carousel-item>
-      </el-carousel>
       <button class="our__works__button">
         Our works
       </button>
     </div>
   </section>
 </template>
-<script>
-export default {
-  data () {
-    return {
-      sliderImages: [
-        { description: 'Web development', src: require('../../assets/main/slider/1.jpg') },
-        { description: 'Web development', src: require('../../assets/main/slider/2.jpg') },
-        { description: 'Web development', src: require('../../assets/main/slider/1.jpg') },
-        { description: 'Web development', src: require('../../assets/main/slider/2.jpg') }
-      ]
-    }
-  },
-  methods: {
-  }
-}
-</script>
-
 <style scoped>
   .main__portfolio{
     width: 100%;
@@ -85,44 +61,10 @@ export default {
   .our__works__button:hover{
     background-color: #228A43;
   }
-  .carousel{
-    margin: 50px 0 0 0;
-    width: 1000px;
-  }
-  .medium{
-    background-color: black;
-    opacity: 0.3;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 15px;
-    transition: all 0.3s;
-  }
-  .el-carousel__item--card.is-active .medium{
-    opacity: 1!important;
-  }
-  .el-carousel__item:nth-child(2n) {
-    background-color: black;
-  }
-
-  .el-carousel__item:nth-child(2n+1) {
-    background-color: black;
-  }
   @media screen and (max-width: 1100px){
     .main__portfolio__container{
       padding: 25px;
       width: 100%;
     }
-    .carousel{
-      width: 100%;
-    }
   }
-</style>
-<style>
-.el-carousel__indicator--horizontal button{
-  background-color: #228A43!important;
-  opacity: 0.5;
-}
 </style>

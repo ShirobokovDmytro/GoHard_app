@@ -89,7 +89,7 @@
   }
   @media screen and (max-width: 610px){
     img{
-      width: 100%;
+      width: 95%;
     }
   }
 </style>

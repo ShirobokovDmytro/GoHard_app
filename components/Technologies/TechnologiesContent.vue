@@ -43,7 +43,7 @@ export default {
             {
               img: require('../../assets/technologies/Front/react.png'),
               head: 'React.js',
-              description: 'React makes it painless to create interactive UIs.'
+              description: 'React can be used to develop single page and mobile apps. Its goal is to provide high speed, simplicity and scalability. As a library for developing user interfaces, React is often used with other libraries such as MobX, Redux, and GraphQL.'
             },
             {
               img: require('../../assets/technologies/Front/vue.png'),

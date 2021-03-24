@@ -59,7 +59,7 @@ export default {
 .el-carousel--horizontal{
   margin-top: 50px;
   width: 100%;
-  height: 600px;
+  margin-bottom: 50px;
 }
 
 .carousel_item{
@@ -167,7 +167,4 @@ export default {
     width: auto;
   }
 }
-</style>
-<style>
-
 </style>

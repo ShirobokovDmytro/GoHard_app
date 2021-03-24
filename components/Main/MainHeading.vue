@@ -30,10 +30,6 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 2px #228A43;
-    transition: all 0.3s;
-  }
-  span:hover{
-    -webkit-text-stroke: 2px #fff;
   }
   @media screen and (max-width: 1100px){
     .main__container{

@@ -141,10 +141,6 @@
     text-align: center;
     margin-bottom: 15px;
   }
-  .right__container__box:hover{
-    color: #228A43;
-    border: 1px solid #228A43;
-  }
   .mobile__button{
     display: none;
   }

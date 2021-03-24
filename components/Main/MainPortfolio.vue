@@ -8,9 +8,9 @@
         Here are some of our previous projects that we worked on and implemented customers requirements and ideas,
         in order to achieve their business objectives.
       </div>
-      <button class="our__works__button">
+      <nuxt-link tag="button" to="/portfolio" class="our__works__button">
         Our works
-      </button>
+      </nuxt-link>
     </div>
   </section>
 </template>

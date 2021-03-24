@@ -7,30 +7,19 @@
       <div class="portfoio_description">
         Here are some of our most relevant and challenging projects that we worked with and implemented customers requirements and ideas, in order to achieve their business objectives.
       </div>
-      <el-carousel :interval="4000" indicator-position="none" height="450px">
-        <el-carousel-item v-for="(slide, index) of blocks" :key="index">
-          <div class="carousel_item" :style='{ backgroundImage: "url(" + slide.backgroung + ")", }'>
-            <div class="carousel_description">
-              <div class="content">
-                <div class="content__heading">
-                  {{ slide.heading }}
-                </div>
-                <div class="content__description">
-                  {{ slide.description }}
-                </div>
-              </div>
-              <div class="technologies">
-                <div class="technologies__heading">
-                  Technologies:
-                </div>
-                <div class="technologies__images">
-                  <img v-for="(img, imgIndex) in slide.technolofies" :key="imgIndex" :src="img.src" alt="">
-                </div>
-              </div>
+      <div class="portfolio__blocks">
+        <div v-for="(block, index) of blocks" :key="index" class="block">
+          <img class="block_image" :src="block.background" alt="image" :class="block.class">
+          <div class="block_content">
+            <div class="content_heading">
+              {{ block.heading }}
+            </div>
+            <div class="content_description">
+              {{ block.description }}
             </div>
           </div>
-        </el-carousel-item>
-      </el-carousel>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -40,15 +29,56 @@ export default {
     return {
       blocks: [
         {
+          heading: 'Website for delivering cars from USA',
+          description: 'The website for cars delivery services from USA to Eastern Europe.\n' +
+            'This client wanted to enlarge his business in order to find new display and ways to provide his services.\n' +
+            'We have implemented his request to build a reliable platform to make this fast and convenient.\n' +
+            'The stack was connected Vue.js, Vuetify, SCSS.',
+          background: require('../../assets/portfolio/works/2.png'),
+          class: 'left'
+        },
+        {
           heading: 'Medical equipment website',
-          description: 'The task was to create working website for current company with all of their equipment and warehouses. The client was fully satisfied.',
-          backgroung: require('../../assets/portfolio/slider/first/background.png'),
-          technolofies: [
-            { src: require('../../assets/portfolio/slider/first/technologies/html.png') },
-            { src: require('../../assets/portfolio/slider/first/technologies/css 1.png') },
-            { src: require('../../assets/portfolio/slider/first/technologies/js 1.png') },
-            { src: require('../../assets/portfolio/slider/first/technologies/Vector.png') }
-          ]
+          description: 'The task was to create working website for current company with all of their equipment and warehouses. The client was fully satisfied.\n' +
+            '(html, css, JQuery, Javascript)\n' +
+            '\n' +
+            'Onco.net\n' +
+            'Website for Ukraine’s first oncological screening center! (JavaScript, PHP, HTML, CSS)',
+          background: require('../../assets/portfolio/works/4.png'),
+          class: 'right'
+        },
+        {
+          heading: 'Medical equipment website',
+          description: `This is the company with 100% of foreign investments. It is situated in USA. It has the warehouses with medical imaging equipment and the spare parts, capacities and resources for repair and service of the medical imaging equipment of world known brands.
+                        The task was to create working website for current company with all of their equipment and warehouses. We should provide clear description and some support in future.
+                        I had done this job totally well, so the client was fully satisfied.
+                        ((html, css, JQuery, Javascript))less
+                        Show less text
+                        http://lee-im.com`,
+          background: require('../../assets/portfolio/works/5.jpg'),
+          class: 'left'
+        },
+        {
+          heading: 'Medical equipment website',
+          description: `This is the company with 100% of foreign investments. It is situated in USA. It has the warehouses with medical imaging equipment and the spare parts, capacities and resources for repair and service of the medical imaging equipment of world known brands.
+                        The task was to create working website for current company with all of their equipment and warehouses. We should provide clear description and some support in future.
+                        I had done this job totally well, so the client was fully satisfied.
+                        ((html, css, JQuery, Javascript))less
+                        Show less text
+                        http://lee-im.com`,
+          background: require('../../assets/portfolio/works/1.png'),
+          class: 'right'
+        },
+        {
+          heading: 'Medical equipment website',
+          description: `This is the company with 100% of foreign investments. It is situated in USA. It has the warehouses with medical imaging equipment and the spare parts, capacities and resources for repair and service of the medical imaging equipment of world known brands.
+                        The task was to create working website for current company with all of their equipment and warehouses. We should provide clear description and some support in future.
+                        I had done this job totally well, so the client was fully satisfied.
+                        ((html, css, JQuery, Javascript))less
+                        Show less text
+                        http://lee-im.com`,
+          background: require('../../assets/portfolio/works/3.png'),
+          class: 'left'
         }
       ]
     }
@@ -56,79 +86,6 @@ export default {
 }
 </script>
 <style>
-.el-carousel--horizontal{
-  margin-top: 50px;
-  width: 100%;
-  margin-bottom: 50px;
-}
-
-.carousel_item{
-  height: 100%;
-  position: relative;
-  border-radius: 15px;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.el-carousel__item.is-active {
-  box-shadow: 0 0 12px rgba(255, 255, 255, 0.25);
-}
-.carousel_description{
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 160px;
-  background-color: rgba(0,0,0, 1);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 0 0 15px 15px;
-}
-.content{
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  width: 65%;
-  padding: 25px;
-}
-.content__description{
-  margin-top: 15px;
-  font-size: 18px;
-  color: #a5a5a5;
-}
-.content__heading{
-  font-size: 30px;
-  line-height: 34px;
-  font-weight: 400;
-}
-.technologies{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 35%;
-  height: 100%;
-  padding: 0 15px;
-}
-.technologies__heading{
-  font-size: 28px;
-  color: #FFFFFF;
-  font-weight: 400;
-}
-.technologies__images{
-  margin-top: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.technologies__images img {
-  width: 40px;
-  height: 40px;
-  margin: 0 15px;
-}
-
 .portfolio_content{
   width: 100%;
   height: 100%;
@@ -154,13 +111,73 @@ export default {
   font-size: 23px;
   color: #A5A5A5;
   max-width: 850px;
+  margin-bottom: 25px;
 }
+.portfolio__blocks{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.block{
+  margin-top: 25px;
+  width: 100%;
+  min-height: 250px;
+  border: 1px solid #606060;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.block_image{
+  width: 40%;
+  height: 250px;
+}
+.left{
+  float: left;
+  border-radius: 5px 0 0 5px;
+}
+.right{
+  float: right;
+  border-radius: 0 5px 5px 0;
+}
+.block_content{
+  width: auto;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.content_heading{
+  font-size: 25px;
+  color: #FFFFFF;
+  font-weight: 400;
+  padding: 15px;
+}
+.content_description{
+  padding: 15px;
+  color: #a5a5a5;
+  font-size: 15px;
+  line-height: 22px;
+}
+
 @media screen and (max-width: 1100px){
   .portfolio_container{
     width: 100%;
     padding: 25px;
   }
-
+}
+@media screen and (max-width: 1040px){
+  .block{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+  }
+  .block_image{
+    width: 100%;
+    height: auto;
+    border-radius: 5px 5px 0 0;
+  }
 }
 @media screen and (max-width: 700px){
   .portfoio_description{

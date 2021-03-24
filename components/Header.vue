@@ -179,6 +179,13 @@ export default {
   }
 
   @media screen and (max-width: 740px) {
+    header{
+      height: 80px;
+    }
+    .logo{
+      width: 120px;
+      height: 90px;
+    }
     .hamburger-menu{
       display: block;
     }

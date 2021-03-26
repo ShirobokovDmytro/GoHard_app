@@ -1,6 +1,6 @@
 <template>
   <section class="our__services">
-    <div class="our__-services__container">
+    <div class="our__services__container">
       <div class="header">
         Our
         <span class="header_services">services</span>
@@ -16,10 +16,9 @@
             class="services_block__container"
           >
             <div class="services_block">
-              <div class="img">
-                <img src="../../assets/main/services/123/settings.gif" alt="">
+              <div class="img" :style="{ backgroundImage: 'url(' + block.background + ')' }">
+                <img :class="block.class" :src="block.src">
               </div>
-<!--              <img class="img" src="../../assets/main/services/123/web.png" alt="">-->
               <div class="description">
                 {{ block.description }}
               </div>
@@ -41,36 +40,28 @@ export default {
   data () {
     return {
       blocks: [
-        { description: 'Web development', src: require('../../assets/main/services/web_dev.gif') },
-        { description: 'Mobile development', src: require('../../assets/main/services/mobile_develop.gif') },
-        { description: 'UI/UX design', src: require('../../assets/main/services/design.gif') },
-        { description: 'Legacy Code Redevelopment', src: require('../../assets/main/services/legacy.gif') },
-        { description: 'Consulting/Estimation', src: require('../../assets/main/services/consulting.gif') },
-        { description: 'Code Review', src: require('../../assets/main/services/code_review.gif') },
-        { description: 'Software Maintenance', src: require('../../assets/main/services/sofware.gif') },
-        { description: 'Product development and support', src: require('../../assets/main/services/product_develop.gif') }
+        { description: 'Web development', class: 'web', src: require('../../assets/main/services/123/settings.gif'), background: require('../../assets/main/services/123/web.png') },
+        { description: 'Mobile development', class: 'mob', src: require('../../assets/main/services/123/settings.gif'), background: require('../../assets/main/services/123/mob.png') },
+        { description: 'UI/UX design', class: 'design', src: require('../../assets/main/services/123/pen.gif'), background: require('../../assets/main/services/123/web.png') },
+        { description: 'Legacy Code Redevelopment', class: 'legacy', src: require('../../assets/main/services/123/synbol.gif'), background: require('../../assets/main/services/123/legacy.png') }
+        // { description: 'Consulting/Estimation', class: 'web', src: require('../../assets/main/services/consulting.gif') },
+        // { description: 'Code Review', class: 'web', src: require('../../assets/main/services/code_review.gif') },
+        // { description: 'Software Maintenance', class: 'web', src: require('../../assets/main/services/sofware.gif') },
+        // { description: 'Product development and support', class: 'web', src: require('../../assets/main/services/product_develop.gif') }
       ]
     }
   }
 }
 </script>
 <style scoped>
-@keyframes rotating {
-  0%   { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-.test {
-  transform-origin: 505px;
-  animation: rotating 4s linear infinite;
-}
   .our__services{
     width: 100%;
-    padding: 100px 0px;
+    padding: 100px 0;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .our__-services__container{
+  .our__services__container{
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -93,7 +84,6 @@ export default {
     margin-top: 50px;
   }
   .img{
-    background-image: url("../../assets/main/services/123/web.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -103,10 +93,25 @@ export default {
     justify-content: center;
     align-items: center;
   }
-  .img img {
-    width: 60%;
-    height: 70%;
+  .web {
+    width: 50%;
+    height: 60%;
     margin-bottom: 15px;
+  }
+  .mob{
+    margin: 0 0 10px 64px;
+    width: 22%;
+    height: 26%;
+  }
+  .design{
+    width: 60%;
+    height: 60%;
+    margin-bottom:15px;
+  }
+  .legacy{
+    width: 30%;
+    height: 50%;
+    margin: 0 0 24px 65px;
   }
   .services_block__container{
     display: flex;
@@ -117,13 +122,14 @@ export default {
     margin-top: 25px;
     box-sizing: border-box;
     width: 180px;
-    height: 155px;
+    min-height: 155px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
   }
   .description{
+    margin-top: 25px;
     color: #fff;
     text-align: center;
     font-size: 18px;

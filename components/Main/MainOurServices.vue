@@ -16,7 +16,10 @@
             class="services_block__container"
           >
             <div class="services_block">
-              <img :src="block.src" alt="block image">
+              <div class="img">
+                <img src="../../assets/main/services/123/settings.gif" alt="">
+              </div>
+<!--              <img class="img" src="../../assets/main/services/123/web.png" alt="">-->
               <div class="description">
                 {{ block.description }}
               </div>
@@ -52,6 +55,14 @@ export default {
 }
 </script>
 <style scoped>
+@keyframes rotating {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.test {
+  transform-origin: 505px;
+  animation: rotating 4s linear infinite;
+}
   .our__services{
     width: 100%;
     padding: 100px 0px;
@@ -81,9 +92,21 @@ export default {
     width: 100%;
     margin-top: 50px;
   }
-  img{
-    width: 100px;
+  .img{
+    background-image: url("../../assets/main/services/123/web.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 140px;
     height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .img img {
+    width: 60%;
+    height: 70%;
+    margin-bottom: 15px;
   }
   .services_block__container{
     display: flex;

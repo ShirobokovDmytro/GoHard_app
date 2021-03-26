@@ -1,22 +1,29 @@
 <template>
   <div class="about_us__content">
     <div class="about_us__content__container">
-      <h2 class="heading">Why Us?</h2>
+      <h2 class="heading">
+        Why Us?
+      </h2>
       <p class="about_us__description">
         Working about 2 years on the market, we consider us as a fast-growing and developing software development agency. We spent a lot of time building a team of experienced developers/designers, in order to discover new horizons in the quality of customers services.
       </p>
       <div class="about_us__blocks">
-        <div class="block" v-for="(block, index) of blocks" :key="index" :class="block.class">
+        <div
+          v-for="(block, index) of blocks"
+          :key="index"
+          class="block"
+          :class="block.class"
+        >
           <div class="caption">
             <div class="caption__number">
-              {{block.number}}
+              {{ block.number }}
             </div>
             <div class="caption__description">
-              {{block.heading}}
+              {{ block.heading }}
             </div>
           </div>
           <div class="description">
-            {{block.description}}
+            {{ block.description }}
           </div>
         </div>
       </div>

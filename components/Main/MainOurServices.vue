@@ -43,11 +43,11 @@ export default {
         { description: 'Web development', class: 'web', src: require('../../assets/main/services/123/settings.gif'), background: require('../../assets/main/services/123/web.png') },
         { description: 'Mobile development', class: 'mob', src: require('../../assets/main/services/123/settings.gif'), background: require('../../assets/main/services/123/mob.png') },
         { description: 'UI/UX design', class: 'design', src: require('../../assets/main/services/123/pen.gif'), background: require('../../assets/main/services/123/web.png') },
-        { description: 'Legacy Code Redevelopment', class: 'legacy', src: require('../../assets/main/services/123/synbol.gif'), background: require('../../assets/main/services/123/legacy.png') }
-        // { description: 'Consulting/Estimation', class: 'web', src: require('../../assets/main/services/consulting.gif') },
-        // { description: 'Code Review', class: 'web', src: require('../../assets/main/services/code_review.gif') },
-        // { description: 'Software Maintenance', class: 'web', src: require('../../assets/main/services/sofware.gif') },
-        // { description: 'Product development and support', class: 'web', src: require('../../assets/main/services/product_develop.gif') }
+        { description: 'Legacy Code Redevelopment', class: 'legacy', src: require('../../assets/main/services/123/synbol.gif'), background: require('../../assets/main/services/123/legacy.png') },
+        { description: 'Consulting/Estimation', class: 'message', src: require('../../assets/main/services/123/message2.gif'), background: require('../../assets/main/services/123/message.png') },
+        { description: 'Code Review', class: 'review', src: require('../../assets/main/services/123/magnifier.gif'), background: require('../../assets/main/services/123/web.png') },
+        { description: 'Software Maintenance', class: 'maintence', src: require('../../assets/main/services/123/wrench.gif'), background: require('../../assets/main/services/123/web.png') },
+        { description: 'Product development and support', class: 'support', src: require('../../assets/main/services/123/support2.gif'), background: require('../../assets/main/services/123/support.png') }
       ]
     }
   }
@@ -112,6 +112,26 @@ export default {
     width: 30%;
     height: 50%;
     margin: 0 0 24px 65px;
+  }
+  .message{
+    width: 60%;
+    height: 30%;
+    margin: 0 0 23px 0;
+  }
+  .review{
+    width: 80%;
+    height: 70%;
+    margin-bottom:15px;
+  }
+  .maintence{
+    width: 90%;
+    height: 75%;
+    margin-bottom:15px;
+  }
+  .support{
+    width: 40%;
+    height: 40%;
+    margin: 0 44px 10px 0;
   }
   .services_block__container{
     display: flex;

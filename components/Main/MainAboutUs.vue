@@ -1,22 +1,22 @@
 <template>
   <section class="about__us">
     <div class="about__us__container">
-      <div class="about__us__left__container">
+      <article class="about__us__left__container">
         <h2 class="head">
           <span class="head__about">About</span>
           us
         </h2>
-        <div class="left__container__content">
+        <p class="left__container__content">
           We are a fast-growing software development
           company with a strong expertise in the most
           relevant and innovative programming
           languages, frameworks, libraries
           and tools.
-        </div>
+        </p>
         <nuxt-link to="/about-us" tag="button" class="left__container__button">
           Read more
         </nuxt-link>
-      </div>
+      </article>
       <div class="about__us__right__container">
         <div class="right__container__box container-first">
           <span class="box__number">7</span>

@@ -26,9 +26,9 @@
           </el-col>
         </el-row>
       </div>
-      <div class="services_description">
+      <p class="services_description">
         Based on our previous expertise in Web/Mobile development, experience with a Product solutions and Design, we are always doing our best to provide you with the expected results.
-      </div>
+      </p>
       <nuxt-link tag="button" to="/our-services" class="services__button">
         More details
       </nuxt-link>

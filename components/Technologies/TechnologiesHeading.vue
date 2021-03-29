@@ -1,9 +1,9 @@
 <template>
-  <div class="about__us__heading__container">
+  <section class="about__us__heading__container">
     <h2 class="about__us__heading">
       Technologies
     </h2>
-  </div>
+  </section>
 </template>
 <style scoped>
 .about__us__heading__container{

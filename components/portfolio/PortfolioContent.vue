@@ -1,12 +1,12 @@
 <template>
-  <div class="portfolio_content">
+  <section class="portfolio_content">
     <div class="portfolio_container">
       <h2 class="heading">
         Our works
       </h2>
-      <div class="portfoio_description">
+      <p class="portfoio_description">
         Here are some of our most relevant and challenging projects that we worked with and implemented customers requirements and ideas, in order to achieve their business objectives.
-      </div>
+      </p>
       <div class="portfolio__blocks">
         <div v-for="(block, index) of blocks" :key="index" class="block">
           <img class="block_image" :src="block.background" alt="image" :class="block.class">
@@ -14,14 +14,14 @@
             <div class="content_heading">
               {{ block.heading }}
             </div>
-            <div class="content_description">
+            <p class="content_description">
               {{ block.description }}
-            </div>
+            </p>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 <script>
 export default {

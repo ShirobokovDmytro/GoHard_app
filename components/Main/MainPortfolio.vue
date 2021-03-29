@@ -1,13 +1,13 @@
 <template>
   <section class="main__portfolio">
     <div class="main__portfolio__container">
-      <div class="header">
+      <h3 class="header">
         Portfolio
-      </div>
-      <div class="portfolio__description">
+      </h3>
+      <p class="portfolio__description">
         Here are some of our previous projects that we worked on and implemented customers requirements and ideas,
         in order to achieve their business objectives.
-      </div>
+      </p>
       <nuxt-link tag="button" to="/portfolio" class="our__works__button">
         Our works
       </nuxt-link>
@@ -37,7 +37,7 @@
     border-bottom: 1px solid #228A43;
   }
   .portfolio__description{
-    margin-top: 50px;
+    margin-top: 30px;
     font-weight: 300;
     font-size: 23px;
     text-align: center;

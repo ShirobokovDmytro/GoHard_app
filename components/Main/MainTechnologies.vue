@@ -2,10 +2,10 @@
   <section class="technologies">
     <div class="technologies__container">
       <img src="@/assets/main/technologies/image_tech.svg" alt="notebook">
-      <div class="technologies__container__info">
-        <h2 class="info__heading">
+      <article class="technologies__container__info">
+        <h3 class="info__heading">
           Technologies
-        </h2>
+        </h3>
         <div class="info__description">
           In our work we always focus on the most flexible, innovative and relevant
           programming languages, frameworks and libraries.
@@ -13,7 +13,7 @@
         <nuxt-link tag="button" to="/technologies" class="info__button">
           Watch list
         </nuxt-link>
-      </div>
+      </article>
     </div>
   </section>
 </template>

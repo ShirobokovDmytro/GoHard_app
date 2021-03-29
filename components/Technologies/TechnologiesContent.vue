@@ -1,14 +1,14 @@
 <template>
-  <div class="technologies__content">
+  <section class="technologies__content">
     <div class="technologies__container">
       <div v-for="(block, index) of blocks" :key="index">
         <div class="slider__container">
           <div class="slider__heading">
             <span class="head_1">{{ block.head_1 }}</span> {{ block.head_2 }}
           </div>
-          <div class="slider__description">
+          <p class="slider__description">
             {{ block.description }}
-          </div>
+          </p>
           <el-carousel :interval="2000" indicator-position="none" height="400px" type="card">
             <el-carousel-item v-for="(item, item_index) in block.slides" :key="item_index">
               <img class="carousel--img" :src="item.img" alt="js">
@@ -23,7 +23,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 <script>
 export default {

@@ -1,10 +1,10 @@
 <template>
-  <div class="our_services_heading__container">
+  <section class="our_services_heading__container">
     <h2 class="our_services_heading">
       <span> Our </span>
       Services
     </h2>
-  </div>
+  </section>
 </template>
 <style scoped>
 .our_services_heading__container{

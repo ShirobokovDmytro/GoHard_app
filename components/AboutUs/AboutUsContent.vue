@@ -1,5 +1,5 @@
 <template>
-  <div class="about_us__content">
+  <section class="about_us__content">
     <div class="about_us__content__container">
       <h2 class="heading">
         Why Us?
@@ -28,7 +28,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 <script>
 export default {

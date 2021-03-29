@@ -1,5 +1,5 @@
 <template>
-  <div class="our_services__content">
+  <section class="our_services__content">
     <div class="our_services__content__container">
       <p class="our_services__description">
         We are a fast-growing software development agency with a strong expertise in the most relevant and innovative programming languages, frameworks, libraries and tools. We
@@ -28,7 +28,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 <script>
 export default {

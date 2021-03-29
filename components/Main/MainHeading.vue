@@ -1,11 +1,11 @@
 <template>
-  <div class="main__container">
+  <section class="main__container">
     <h1>
       Software <br>
       <span>development</span>
       services
     </h1>
-  </div>
+  </section>
 </template>
 <style scoped>
   .main__container{

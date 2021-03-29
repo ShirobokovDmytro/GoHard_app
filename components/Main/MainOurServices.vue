@@ -40,14 +40,14 @@ export default {
   data () {
     return {
       blocks: [
-        { description: 'Web development', class: 'web', src: require('../../assets/main/services/123/settings.gif'), background: require('../../assets/main/services/123/web.png') },
-        { description: 'Mobile development', class: 'mob', src: require('../../assets/main/services/123/settings.gif'), background: require('../../assets/main/services/123/mob.png') },
-        { description: 'UI/UX design', class: 'design', src: require('../../assets/main/services/123/pen.gif'), background: require('../../assets/main/services/123/web.png') },
-        { description: 'Legacy Code Redevelopment', class: 'legacy', src: require('../../assets/main/services/123/synbol.gif'), background: require('../../assets/main/services/123/legacy.png') },
+        { description: 'Web development', class: 'web', src: require('../../assets/main/services/123/settings.png'), background: require('../../assets/main/services/123/web.png') },
+        { description: 'Mobile development', class: 'mob', src: require('../../assets/main/services/123/settings.png'), background: require('../../assets/main/services/123/mob.png') },
+        { description: 'UI/UX design', class: 'design', src: require('../../assets/main/services/123/pen.png'), background: require('../../assets/main/services/123/design_bg.png') },
+        { description: 'Legacy Code Redevelopment', class: 'legacy', src: require('../../assets/main/services/123/synbol.png'), background: require('../../assets/main/services/123/legacy.png') },
         { description: 'Consulting/Estimation', class: 'message', src: require('../../assets/main/services/123/message2.gif'), background: require('../../assets/main/services/123/message.png') },
-        { description: 'Code Review', class: 'review', src: require('../../assets/main/services/123/magnifier.gif'), background: require('../../assets/main/services/123/web.png') },
-        { description: 'Software Maintenance', class: 'maintence', src: require('../../assets/main/services/123/wrench.gif'), background: require('../../assets/main/services/123/web.png') },
-        { description: 'Product development and support', class: 'support', src: require('../../assets/main/services/123/support2.gif'), background: require('../../assets/main/services/123/support.png') }
+        { description: 'Code Review', class: 'review', src: require('../../assets/main/services/123/magnifier.png'), background: require('../../assets/main/services/123/rewiew.png') },
+        { description: 'Software Maintenance', class: 'maintence', src: require('../../assets/main/services/123/support.gif'), background: require('../../assets/main/services/123/web.png') },
+        { description: 'Product development and support', class: 'support', src: require('../../assets/main/services/123/support2.png'), background: require('../../assets/main/services/123/support.png') }
       ]
     }
   }
@@ -94,44 +94,96 @@ export default {
     align-items: center;
   }
   .web {
-    width: 50%;
-    height: 60%;
+    width: 60px;
+    height: 60px;
     margin-bottom: 15px;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
   }
+  @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+  @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+  @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
   .mob{
     margin: 0 0 10px 64px;
-    width: 22%;
-    height: 26%;
+    width: 25px;
+    height: 25px;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
   }
   .design{
-    width: 60%;
-    height: 60%;
-    margin-bottom:15px;
+    width: 30px;
+    height: 30px;
+    margin-bottom:45px;
+    animation:move 2.5s ease-in-out infinite;
+  }
+  @keyframes move {
+    0% {
+      margin-bottom:45px;
+    }
+    25% {
+      margin: 10px -65px 0 0;
+    }
+    50% {
+      margin: 35px 40px 0 0;
+    }
+    100%{
+      margin-bottom:45px;
+    }
   }
   .legacy{
-    width: 30%;
-    height: 50%;
-    margin: 0 0 24px 65px;
+    width: 11px;
+    height: 40px;
+    margin: 0 0 28px 68px;
+    animation: fadeInFromNone 1.5s ease-in infinite;
+  }
+  @keyframes fadeInFromNone {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.2;
+    }
   }
   .message{
-    width: 60%;
-    height: 30%;
-    margin: 0 0 23px 0;
+    width: 40%;
+    height: 20%;
+    margin: 0 0 25px 0;
   }
   .review{
-    width: 80%;
-    height: 70%;
-    margin-bottom:15px;
+    width: 30px;
+    height: 30px;
+    margin-bottom:50px;
+    animation:review 2.5s ease-in-out infinite;
+  }
+  @keyframes review {
+    0% {
+      margin: 0 0 0 50px;
+    }
+    25% {
+      margin: 0 0 50px 0;
+    }
+    50% {
+      margin: 0 55px 0 0;
+    }
+    75%{
+      margin: 20px 0 0 0;
+    }
+    100% {
+      margin: 0 0 0 50px;
+    }
   }
   .maintence{
-    width: 90%;
-    height: 75%;
+    width: 110px;
+    height: 65px;
     margin-bottom:15px;
   }
   .support{
-    width: 40%;
-    height: 40%;
-    margin: 0 44px 10px 0;
+    width: 40px;
+    height: 40px;
+    margin: 0 0 10px 75px;
+    animation: fadeInFromNone 1.5s ease-in infinite;
   }
   .services_block__container{
     display: flex;

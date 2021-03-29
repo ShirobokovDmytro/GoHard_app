@@ -86,7 +86,7 @@ export default {
     border: 1px solid #a5a5a5;
     backdrop-filter: blur(26px);
     display: flex;
-    box-shadow: 0px 0px 44px rgba(34, 138, 67, 0.35);
+    box-shadow: 0px 0px 8px rgba(34, 138, 67, 0.35);
   }
   .caption{
     padding: 5px;

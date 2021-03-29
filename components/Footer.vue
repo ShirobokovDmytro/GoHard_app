@@ -71,7 +71,7 @@
       height: 75px;
     }
     img{
-      width: 25px;
+      width: 30px;
       height: 25px;
     }
     .description{

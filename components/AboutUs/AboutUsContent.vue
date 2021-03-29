@@ -82,7 +82,7 @@ export default {
     padding: 5px;
     border-radius: 5px;
     width: 750px;
-    height: 250px;
+    min-height: 250px;
     border: 1px solid #a5a5a5;
     backdrop-filter: blur(26px);
     display: flex;
@@ -92,7 +92,7 @@ export default {
     padding: 5px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
     width: 350px;
@@ -135,11 +135,22 @@ export default {
     }
     .block{
       margin: 25px 0;
+      height: auto;
+    }
+  }
+  @media screen and (max-width: 1040px){
+    .block {
+      width: 100%;
+    }
+    .caption{
+      width: auto;
+    }
+    .description{
+      width: auto;
     }
   }
   @media screen and (max-width: 800px){
     .block{
-      width: 100%;
       height: auto;
     }
   }

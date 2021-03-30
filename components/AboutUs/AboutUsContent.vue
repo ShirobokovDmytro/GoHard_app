@@ -132,7 +132,7 @@ export default {
     .about_us__content__container{
       width: 100%;
       padding: 25px;
-    }
+  }
     .block{
       margin: 25px 0;
       height: auto;

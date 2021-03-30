@@ -111,7 +111,6 @@ export default {
   font-size: 23px;
   color: #A5A5A5;
   max-width: 850px;
-  margin-bottom: 25px;
 }
 .portfolio__blocks{
   width: 100%;
@@ -155,7 +154,7 @@ export default {
   padding: 15px;
 }
 .content_description{
-  padding: 15px;
+  padding: 0 15px 0 15px;
   color: #a5a5a5;
   font-size: 15px;
   line-height: 22px;
